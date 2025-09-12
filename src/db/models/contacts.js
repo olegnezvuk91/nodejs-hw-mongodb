@@ -6,7 +6,7 @@ export const contactSchema = new Schema(
 
     phoneNumber: { type: String, required: true },
     email: { type: String },
-    isFavorite: { type: Boolean, default: false },
+    isFavourite: { type: Boolean, default: false },
     contactType: {
       type: String,
       enum: ['work', 'home', 'personal'],
