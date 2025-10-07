@@ -4,10 +4,10 @@ import {
   logoutUserController,
   refreshUserSessionController,
   registerUserController,
-} from '../controllers/auth';
-import { loginUserSchema, registerUserSchema } from '../validation/auth';
-import { validateBody } from '../middlewares/validateBody';
-import { ctrlWrapper } from '../middlewares/ctrlWrapper';
+} from '../controllers/auth.js';
+import { loginUserSchema, registerUserSchema } from '../validation/auth.js';
+import { validateBody } from '../middlewares/validateBody.js';
+import { ctrlWrapper } from '../middlewares/ctrlWrapper.js';
 
 const router = Router();
 
