@@ -30,7 +30,7 @@ export const loginUser = async (payload) => {
   }
 
   await SessionsCollection.deleteOne({ userId: user._id });
-  const accessToken = randomBytes(15).toString('base64');
+  const accessToken = randomBytes(30).toString('base64');
   const refreshToken = randomBytes(30).toString('base64');
 
   return await SessionsCollection.create({
